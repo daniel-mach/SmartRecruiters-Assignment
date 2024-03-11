@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dissolve | Breaking Down the Barriers</title>
+		<link rel="icon" type="image/svg+xml" href="images/icons/logo.svg" />
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header class="header">
+			<img class="header__logo" src="images/icons/logo.svg" alt="Logo of the Dissolve company" />
+			<nav class="header__navbar">
+				<ul class="header__navbar-list">
+					<li class="header__navbar-list-item">
+						<img src="images/icons/search.svg" alt="An icon of a looking glass" />
+					</li>
+					<li class="header__navbar-list-item">
+						<img src="images/icons/heart.svg" alt="An icon of a heart" />
+					</li>
+					<li class="header__navbar-list-item">
+						<button class="header__navbar-button">
+							<div class="burger-menu">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</button>
+					</li>
+				</ul>
+				<div class="menu">
+					<div class="menu__content">
+						<ul class="menu__content-list">
+							<li class="menu__content-list-item">
+								<a href="javascript:void(0)" class="menu__content-list-link">About Us</a>
+							</li>
+							<li class="menu__content-list-item">
+								<a href="javascript:void(0)" class="menu__content-list-link">Our Stories</a>
+							</li>
+							<li class="menu__content-list-item">
+								<a href="javascript:void(0)" class="menu__content-list-link">Our Values</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main class="main-content">
+			<section class="section hero-section">
+				<div class="hero-section__image-wrapper">
+					<img
+						class="hero-section__image"
+						src="images/group-02.jpg"
+						alt="A group of cheerful men caught mid-jump" />
+					<div class="hero-section__color"></div>
+					<img
+						class="hero-section__image"
+						src="images/group-01.jpg"
+						alt="A group of smiling people looking at the camera" />
+				</div>
+				<article class="hero-section__content">
+					<h1 class="hero-section__heading">Working together to make a better tomorrow!</h1>
+					<h2 class="hero-section__subheading">Breaking down the barriers and opening opportunities.</h2>
+					<button class="hero-section__button" id="modal-open">Click here to register your interest</button>
+				</article>
+			</section>
+
+			<section class="section info-section">
+				<article class="info-section__content">
+					<h2 class="info-section__heading">There's more than just one way to make a difference.</h2>
+					<p class="info-section__body">
+						Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
+						urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+						Maecenas vitae mattis tellus.
+					</p>
+					<button class="info-section__button">Find out more here</button>
+				</article>
+				<div class="info-section__image-grid">
+					<img
+						class="info-section__image"
+						src="images/man-01.jpg"
+						alt="An image of a smiling man with an earring" />
+					<img
+						class="info-section__image"
+						src="images/man-02.jpg"
+						alt="An image of a smiling man with a backpack" />
+					<img
+						class="info-section__image"
+						src="images/woman-02.jpg"
+						alt="An image of a smiling woman with dark sunglasses" />
+					<img
+						class="info-section__image"
+						src="images/woman-01.jpg"
+						alt="An image of a smiling woman with a flower in her hair" />
+				</div>
+			</section>
+		</main>
+
+		<div class="modal" id="modal">
+			<form class="modal__form">
+				<button class="modal__close" id="modal-close" type="button">&times;</button>
+				<h2 class="modal__heading">Welcome <span id="name-placeholder">{name placeholder}</span></h2>
+				<label class="modal__placeholder" for="name-input">Please enter your name</label>
+				<input class="modal__input" type="text" id="name-input" />
+			</form>
+		</div>
+
+		<script src="js/main.js"></script>
+	</body>
+</html>

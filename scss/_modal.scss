@@ -1,0 +1,81 @@
+.modal {
+	display: none;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+	background-color: $modalBackground;
+
+	&__form {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: $orange;
+		padding: 30px 25px;
+		width: 85%;
+	}
+
+	&__heading {
+		@include font-styles("Ubuntu", normal, 18px, 30px, 28px, 66px, $white);
+		margin-bottom: 40px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__input {
+		@include font-styles("Ubuntu", normal, 14px, 18px, initial, initial, $black);
+		position: relative;
+		width: 100%;
+		padding: 10px 10px 10px 15px;
+		border: none;
+		border-radius: 29px;
+	}
+
+	&__placeholder {
+		@include font-styles("Ubuntu", normal, 12px, 18px, initial, initial, $white);
+		position: absolute;
+		top: 53%;
+		left: 40px;
+		transform: translateY(-50%);
+	}
+
+	&__close {
+		@include font-styles("Ubuntu", normal, 25px, 40px, initial, initial, $white);
+		position: absolute;
+		top: 1px;
+		right: 8px;
+		border: none;
+		background: transparent;
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.modal {
+		&__form {
+			width: 48%;
+			padding: 40px 79px 123px 54px;
+		}
+
+		&__input {
+			padding: 19px 10px 19px 21px;
+		}
+
+		&__placeholder {
+			top: 40%;
+			left: 80px;
+		}
+
+		&__close {
+			top: 5px;
+			right: 20px;
+		}
+	}
+}
